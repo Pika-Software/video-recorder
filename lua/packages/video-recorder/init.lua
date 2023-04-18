@@ -1,5 +1,5 @@
 -- GLua Extensions
-import( Either( file.Exists( "packages/glua-extensions/package.lua", gpm.LuaRealm ), "packages/glua-extensions", "https://raw.githubusercontent.com/Pika-Software/glua-extensions/main/package.json" ) )
+import( file.Exists( "packages/glua-extensions/package.lua", gpm.LuaRealm ) and "packages/glua-extensions" or "https://raw.githubusercontent.com/Pika-Software/glua-extensions/main/package.json" )
 
 local packageName = gpm.Package:GetIdentifier()
 local FrameTime = FrameTime
