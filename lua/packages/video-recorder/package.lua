@@ -1,5 +1,6 @@
 name = "video-recorder"
 main = "init.lua"
+version = 000100
 server = false
 autorun = true
-version = 3
+logger = true
