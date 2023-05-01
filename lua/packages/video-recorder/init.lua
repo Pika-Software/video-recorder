@@ -33,7 +33,7 @@ local function stop()
 
         if upload:GetBool() and type( imgur ) == "table" then
             file.AsyncRead( "videos/" .. fileName .. ".webm", "GAME" ):Then( function( result )
-                imgur.Upload( result.content, "video" ):Then( function( result )
+                imgur.Upload( result.fileContent, "video" ):Then( function( result )
                     chat.AddText( logger:GetColor(), packageName, logger:GetTextColor(), ": Video uploaded to Imgur, link: ", linkColor, result.link .. "mp4" )
                 end )
             end )
