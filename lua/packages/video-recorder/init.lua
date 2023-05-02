@@ -6,10 +6,10 @@ local logger = gpm.Logger
 local surface = surface
 local file = file
 
-local quality = CreateClientConVar( "recorder_quality", "80", true, false, " - Recording quality from 5 to 100%", 5, 100 )
-local audio = CreateClientConVar( "recorder_audio", "1", true, false, " - Is it worth it to record the sound?", 0, 1 )
-local fps = CreateClientConVar( "recorder_fps", "30", true, false, " - FPS recording, it is highly not recommended to change!", 15, 75 )
-local upload = CreateClientConVar( "recorder_imgur", "0", true, false, " - Upload videos to Imgur? (this requires a ClientID and additional package)", 0, 1 )
+local quality = CreateClientConVar( "recorder_quality", "80", true, false, "Recording quality from 5 to 100%", 5, 100 )
+local audio = CreateClientConVar( "recorder_audio", "1", true, false, "Is it worth it to record the sound?", 0, 1 )
+local fps = CreateClientConVar( "recorder_fps", "30", true, false, "FPS recording, it is highly not recommended to change!", 15, 75 )
+local upload = CreateClientConVar( "recorder_imgur", "0", true, false, "Upload videos to Imgur? (this requires a ClientID and additional package)", 0, 1 )
 
 local matRecording = Material( "gmod/recording.png", "smooth mips" )
 local linkColor = Color( 0, 200, 255 )
