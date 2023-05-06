@@ -1,10 +1,12 @@
 import( gpm.LuaPackageExists( "packages/glua-extensions" ) and "packages/glua-extensions" or "https://github.com/Pika-Software/glua-extensions" )
 
 local packageName = gpm.Package:GetIdentifier()
+local CreateClientConVar = CreateClientConVar
 local FrameTime = FrameTime
 local logger = gpm.Logger
 local surface = surface
 local file = file
+local hook = hook
 
 local quality = CreateClientConVar( "recorder_quality", "80", true, false, "Recording quality from 5 to 100%", 5, 100 )
 local audio = CreateClientConVar( "recorder_audio", "1", true, false, "Is it worth it to record the sound?", 0, 1 )
