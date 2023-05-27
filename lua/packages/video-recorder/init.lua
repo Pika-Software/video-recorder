@@ -1,4 +1,4 @@
-require( "packages/glua-extensions", "https://github.com/Pika-Software/glua-extensions" )
+install( "packages/glua-extensions", "https://github.com/Pika-Software/glua-extensions" )
 
 local packageName = gpm.Package:GetIdentifier()
 local CreateClientConVar = CreateClientConVar
