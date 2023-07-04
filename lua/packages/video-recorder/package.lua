@@ -1,6 +1,6 @@
 name = "video-recorder"
-main = "init.lua"
-version = 000102
-server = false
+version = 000200
 autorun = true
-logger = true
+init = {
+    ["client"] = "init.lua"
+}
