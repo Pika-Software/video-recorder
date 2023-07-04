@@ -1,7 +1,0 @@
-{
-    "name": "video-recorder",
-    "files": {
-        "lua/packages/video-recorder/package.lua": "https://raw.githubusercontent.com/Pika-Software/video-recorder/master/lua/packages/video-recorder/package.lua",
-        "lua/packages/video-recorder/init.lua": "https://raw.githubusercontent.com/Pika-Software/video-recorder/master/lua/packages/video-recorder/init.lua"
-    }
-}
